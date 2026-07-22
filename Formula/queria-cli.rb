@@ -18,7 +18,7 @@ class QueriaCli < Formula
   on_macos do
     on_arm do
       url "https://api.github.com/repos/nandocoeg2/queria-backend/releases/assets/485703228",
-          header: [
+          headers: [
             "Accept: application/octet-stream",
             "Authorization: Bearer #{ENV.fetch("HOMEBREW_GITHUB_API_TOKEN", ENV.fetch("GH_TOKEN", ENV.fetch("GITHUB_TOKEN", "")))}",
           ]
@@ -26,7 +26,7 @@ class QueriaCli < Formula
     end
     on_intel do
       url "https://api.github.com/repos/nandocoeg2/queria-backend/releases/assets/485703227",
-          header: [
+          headers: [
             "Accept: application/octet-stream",
             "Authorization: Bearer #{ENV.fetch("HOMEBREW_GITHUB_API_TOKEN", ENV.fetch("GH_TOKEN", ENV.fetch("GITHUB_TOKEN", "")))}",
           ]
@@ -37,7 +37,7 @@ class QueriaCli < Formula
   on_linux do
     on_arm do
       url "https://api.github.com/repos/nandocoeg2/queria-backend/releases/assets/485703230",
-          header: [
+          headers: [
             "Accept: application/octet-stream",
             "Authorization: Bearer #{ENV.fetch("HOMEBREW_GITHUB_API_TOKEN", ENV.fetch("GH_TOKEN", ENV.fetch("GITHUB_TOKEN", "")))}",
           ]
@@ -45,7 +45,7 @@ class QueriaCli < Formula
     end
     on_intel do
       url "https://api.github.com/repos/nandocoeg2/queria-backend/releases/assets/485703231",
-          header: [
+          headers: [
             "Accept: application/octet-stream",
             "Authorization: Bearer #{ENV.fetch("HOMEBREW_GITHUB_API_TOKEN", ENV.fetch("GH_TOKEN", ENV.fetch("GITHUB_TOKEN", "")))}",
           ]
